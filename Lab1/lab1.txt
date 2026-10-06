@@ -1,0 +1,37 @@
+octave:2> pkg load symbolic
+octave:3> x=4
+x = 4
+octave:4> y=7
+y = 7
+octave:5> z=10
+z = 10
+octave:6> a=(3.41-x^2-1.2*x*y+5*sin(pi*z)^2+sqrt(abs(x^2-x*y)))/(exp(-(x^2+y^2+(z/2)))+atan(3.3*x+y-9.1*z))
+a = 27.447
+octave:7> b=log(sqrt(9+abs((x^2+atan(z)+y*(4-x^2)^3)/(pi+sin(x)^2+cos(y)^2+sin(z)))))
+b = 4.0416
+octave:8> syms x y z
+Symbolic pkg v3.2.2: Python communication link active, SymPy v1.10.1.
+octave:9> a1sym=sym('(3.41-x^2-1.2*x*y+5*sin(pi*z)^2+sqrt(abs(x^2-x*y)))/(exp(-(x^2+y^2+(z/2)))+atan(3.3*x+y-9.1*z))')
+a1sym = (sym)
+
+                                     ____________       
+     2                  2           / | 2      |        
+  - x  - 1.2*x*y + 5*sin (pi*z) + \/  |x  - x*y|  + 3.41
+  ------------------------------------------------------
+             2    2   z                                 
+          - x  - y  - -                                 
+                      2                                 
+         e              + atan(3.3*x + y - 9.1*z)       
+
+octave:10> b1sym=sym('log(sqrt(9+abs((x^2+atan(z)+y*(4-x^2)^3)/(pi+sin(x)^2+cos(y)^2+sin(z)))))')
+b1sym = (sym)
+
+     /       _______________________________________\
+     |      / |                  3            |     |
+     |     /  |    2     / 2    \             |     |
+     |    /   |   x  - y*\x  - 4/  + atan(z)  |     |
+  log|   /    |-------------------------------| + 9 |
+     |  /     |   2                  2        |     |
+     \\/      |sin (x) + sin(z) + cos (y) + pi|     /
+
+octave:11> diary off
