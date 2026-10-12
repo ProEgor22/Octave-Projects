@@ -1,0 +1,5 @@
+octave:16> Lab5_2
+Vvedit rebro cuba a: 3.87
+Obyem kuba V = 57.9606
+Plosha bichnoi poverhni S = 89.8614
+octave:17> diary off
