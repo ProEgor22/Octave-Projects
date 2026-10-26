@@ -1,0 +1,9 @@
+octave:4> Lab6_2
+Kvadratne rivnyanya: 9.7x^2 + 2.9x + (-5.8) = 0
+Koreni rivnyanya:
+ x1 = -0.937
+ x2 = 0.638
+
+Kinceva vidpovid:
+ y = 0.089
+octave:5> diary off
