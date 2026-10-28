@@ -1,0 +1,7 @@
+octave:7> Lab7_3
+Vvedit a = -3
+Vvedit b = 2
+Kilkist elementiv > 4.1: 5
+
+Dobutok elementiv: 4.85165e+08
+octave:8> diary off
