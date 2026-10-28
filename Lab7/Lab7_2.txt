@@ -1,0 +1,7 @@
+octave:3> Lab7_2
+Vvedit vektor stovpchik [n1; n2; ...]:
+ [1; 2.2; -3; -1; 4.3; 5; 12; 7.1; 1.4]
+Kilkist elementiv >= 1.7: 5
+
+Dobutok elementiv: 4029.96
+octave:4> diary off
