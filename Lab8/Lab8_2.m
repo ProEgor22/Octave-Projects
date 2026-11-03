@@ -1,4 +1,3 @@
-pkg load optim
 % Встановлюємо графічний інструментарій Qt
 graphics_toolkit('qt');
 
