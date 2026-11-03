@@ -1,5 +1,6 @@
 clc
 i = 0;
+c = 4.1;
 
 while true
   a = str2double(input('Vvedit a = ', 's'));
@@ -25,7 +26,7 @@ while true
   elem = [];
 
   for k = 1:size(y, 2)
-    if y(1, k) > 4.1
+    if y(1, k) > c
       elem = [elem, y(1, k)];
     end
   end

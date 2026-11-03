@@ -18,7 +18,7 @@ while true
 
   has_div_by_zero = false;
   if ~isnan(x) && ~isnan(N)
-    for k = 0:N
+    for k = 1:N
       if x + k == 0
         has_div_by_zero = true;
         break;
