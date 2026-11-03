@@ -1,0 +1,4 @@
+octave:4> [V, S] = rkub(14)
+V = 2744
+S = 1176
+octave:5> diary off
