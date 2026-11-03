@@ -81,9 +81,9 @@ function calculate(~, ~, h_f, h_A, h_b, h_x1, h_x2, h_fval, h_status)
     lb = zeros(size(c));                % Нижня межа x >= 0 (неможливо створити < 0 БПЛА)
     ub = [];                            % Верхня межа відсутня
 
-    [x, fval, status] = glpk(c, A, b, lb, ub, ctype, vartype, sense);
+    [x, fval, errnum, extra] = glpk(c, A, b, lb, ub, ctype, vartype, sense);
 
-    if status == 0
+    if errnum == 0 && extra.status == 5
       set(h_x1, 'String', num2str(x(1)));
       set(h_x2, 'String', num2str(x(2)));
       set(h_fval, 'String', num2str(fval));
